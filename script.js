@@ -11,7 +11,7 @@ function validateInput() {
                 nextInput = allInputs[i].nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling
                 if (nextInput.type === "text" || nextInput.type === "email" || nextInput.type === "password") {
                     nextInput.style.marginTop = "0px"
-                } else if (nextInput.previousElementSibling == button){
+                } else if (nextInput.previousElementSibling == "button"){
                     nextInput.previousElementSibling.style.marginTop = "0px"
                 }
                 allInputs[i].style.color = "hsl(0, 100%, 74%)"
