@@ -17,9 +17,13 @@ function innerValidateInput() {
 
             // remove html custom error message
             allInputs[i].setCustomValidity(" ")
+
+            // set style 
             allInputs[i].style.outline = "1px solid rgba(223, 104, 104, 0.774)"
             allInputs[i].placeholder = ""
             allInputs[i].nextElementSibling.style.display = "block"
+
+            // get the net inputtag
             nextInput = allInputs[i].nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling
             if (nextInput.type === "text" || nextInput.type === "email" || nextInput.type === "password") {
                 nextInput.style.marginTop = "0px"
@@ -37,8 +41,12 @@ function innerValidateInput() {
             }
 
         } else if (allInputs[i].checkValidity()) {
+
+            // get the next input element after a valid input element
             nextInput = allInputs[i].nextElementSibling.nextElementSibling.nextElementSibling.nextElementSibling
             nextInput.style.marginTop = "18px"
+
+            // set style properties
             allInputs[i].nextElementSibling.style.display = "none"
             allInputs[i].nextElementSibling.nextElementSibling.style.display = "none"
             allInputs[i].style.outline = "1px solid hsla(248, 32%, 49%, 0.692)"

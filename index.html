@@ -28,23 +28,27 @@
                 <div class="form">
                     <form action="#" method="post">
                         <label for="first name">First Name</label>
-                        <input class="input" type="text" placeholder="First Name" required>
+                        <input class="input" type="text" placeholder="First Name" required
+                        oninput="this.setCustomValidity('')" >
                         <span class="errorMsg">First Name cannot be empty</span>
                         <img src="images/icon-error.svg" alt="error icon" class="errorIcon">
 
                         <label for="last name">Last Name</label>
-                        <input class="input" type="text" placeholder="Last Name" required>
+                        <input class="input" type="text" placeholder="Last Name" required
+                        oninput="this.setCustomValidity('')" >
                         <span class="errorMsg">Last Name cannot be empty</span>
                         <img src="images/icon-error.svg" alt="error icon" class="errorIcon">
                         
                         <label for="email">Email Address</label>
-                        <input class="input" type="email" placeholder="Email Address" required>
+                        <input class="input" type="email" placeholder="Email Address" required
+                        oninput="this.setCustomValidity('')" >
                         <span class="errorMsg">Looks like this is not an email</span>
                         <img src="images/icon-error.svg" alt="error icon" class="errorIcon">
 
 
                         <label for="password">Password</label>
-                        <input class="input" type="password" placeholder="Password" required>
+                        <input class="input" type="password" placeholder="Password" required
+                        oninput="this.setCustomValidity('')" >
                         <span class="errorMsg">Password cannot be empty</span>
                         <img src="images/icon-error.svg" alt="error icon" class="errorIcon">
 
