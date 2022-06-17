@@ -1,8 +1,9 @@
 function validateInput() {
     
-
-    
+    // validate when button is clicked
     innerValidateInput();
+
+    // continue checking for validity as user types in values
     window.addEventListener('keyup', function (e) {
         innerValidateInput();
     });
@@ -14,6 +15,8 @@ function innerValidateInput() {
     for (var i = 0; i < allInputs.length; i++) {
         if (!allInputs[i].checkValidity()) {
 
+            // remove html custom error message
+            allInputs[i].setCustomValidity(" ")
             allInputs[i].style.outline = "1px solid rgba(223, 104, 104, 0.774)"
             allInputs[i].placeholder = ""
             allInputs[i].nextElementSibling.style.display = "block"
