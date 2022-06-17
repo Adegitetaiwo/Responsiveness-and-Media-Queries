@@ -16,7 +16,7 @@ function innerValidateInput() {
         if (!allInputs[i].checkValidity()) {
 
             // remove html custom error message
-            allInputs[i].setCustomValidity(" ")
+            allInputs[i].setCustomValidity(' ')
 
             // set style 
             allInputs[i].style.outline = "1px solid rgba(223, 104, 104, 0.774)"
